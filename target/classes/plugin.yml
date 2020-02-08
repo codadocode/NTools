@@ -1,0 +1,77 @@
+name: NTools
+main: br.com.nareba.ntools.NTools
+version: "1.0.0"
+api: ["1.0.5"]
+author: "Felipe 'Nareba'"
+commands:
+  tpa:
+    usage: "/tpa"
+    description: "Envia uma solicitação de teleporte para outro jogador"
+    permission: ntools.tpa
+  taceitar:
+    usage: "/taceitar"
+    description: "Aceita a solicitação de teleporte enviada por outro jogador"
+    permission: ntools.taceitar
+  trecusar:
+    usage: "/trecusar"
+    description: "Recusa a solicitação de teleporte enviada por outro jogador"
+    permission: ntools.trecusar
+  home:
+    usage: "/<command> [homename]"
+    description: "Teleporta o jogador para uma posição salva."
+    permission: ntools.home
+  sethome:
+    usage: "/<command> [sethome]"
+    description: "Salva a atual posição para servir de teleporte."
+    permission: ntools.sethome
+  vanish:
+    usage: "/<command>"
+    permission: ntools.vanish
+    description: "Permite ao jogador ficar invisível e sair da lista de jogadores do servidor."
+  see:
+    usage: "/<command>"
+    permission: ntools.see
+    description: "Sai do modo vanish."
+  spy:
+    usage: "/<command>"
+    permission: ntools.spy
+    description: "Teleporte silencioso até o jogador alvo."
+  invget:
+    usage: "/<command>"
+    permission: ntools.inv
+    description: "Pega os itens do inventário do jogador alvo."
+  invsend:
+    usage: "/<command>"
+    permission: ntools.inv
+    description: "Envia seu inventário para o jogador alvo"
+  clear:
+    usage: "/<command>"
+    permission: ntools.clear
+    description: "Limpa inventário próprio ou de um jogador alvo."
+permissions:
+  ntools:
+    default: true
+  ntools.tpa:
+    default: true
+  ntools.taceitar:
+    default: true
+  ntools.trecusar:
+    default: true
+  ntools.home:
+    default: true
+  ntools.sethome:
+    default: true
+  ntools.home.multiple:
+    default: op
+  ntools.sethome.multiple:
+    default: op
+  ntools.vanish:
+    default: op
+  ntools.see:
+    default: op
+  ntools.spy:
+    default: op
+  ntools.inv:
+    default: op
+  ntools.clear:
+    default: op
